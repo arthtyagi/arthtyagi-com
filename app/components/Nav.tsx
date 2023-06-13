@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import UserLinks from "./UserLinks";
 
 export default function Nav() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -16,18 +17,21 @@ export default function Nav() {
         {/* Navigation */}
         <nav className="flex flex-row justify-end">
           <ul className="flex flex-row space-x-5">
-            <li
+            <a
               className="lg:text-5xl text-3xl font-sans font-black
-        duration-300 hover:text-red-600"
+        duration-300 link-underline link-underline-black"
+              href="/blogs"
             >
               Blogs
-            </li>
-            <li
+            </a>
+            <a
               className="lg:text-5xl text-3xl  font-sans sm:uppercase font-black
-          hover:text-white hover:bg-red-600 duration-300 sm:text-white sm:bg-black"
+              link-underline duration-300 sm:text-white sm:bg-black"
+              href="https://soundcloud.com/ogtrillbill"
+              target="_blank"
             >
               Music
-            </li>
+            </a>
           </ul>
         </nav>
       </div>
@@ -44,8 +48,10 @@ export default function Nav() {
 
           {/* cover the whole screen, white background, black text */}
           {mobileMenu && (
-            <div className="fixed inset-0 bg-red-50 bg-gradient-to-b
-             flex flex-col justify-center items-center">
+            <div
+              className="fixed inset-0 z-50 bg-red-50
+             flex flex-col justify-center items-center"
+            >
               {/* close button */}
               <button
                 className="absolute top-5 right-5"
@@ -53,14 +59,24 @@ export default function Nav() {
               >
                 <XMarkIcon className="h-10 w-10" />
               </button>
-              <ul className="flex flex-col space-y-10">
-                <li className="text-5xl font-sans uppercase font-black">
+              <ul className="flex flex-col space-y-10 pb-12 uppercase">
+                <a
+                  className=" text-5xl font-sans font-black
+        duration-300 link-underline link-underline-black"
+                  href="/blogs"
+                >
                   Blogs
-                </li>
-                <li className="text-5xl font-sans uppercase font-black">
+                </a>
+                <a
+                  className="text-5xl font-sans sm:uppercase font-black
+              link-underline duration-300 sm:text-white sm:bg-black"
+                  href="https://soundcloud.com/ogtrillbill"
+                  target="_blank"
+                >
                   Music
-                </li>
+                </a>
               </ul>
+                <UserLinks />
             </div>
           )}
         </div>

@@ -129,15 +129,6 @@ module.exports = {
   plugins: [
     "@tailwindcss/forms",
     "@tailwindcss/aspect-ratio",
-    plugin(function ({ addBase, theme }) {
-      addBase({
-        body: {
-          color: theme("colors.black"),
-          backgroundColor: theme("colors.white"),
-        },
-      });
-    }),
-
     plugin(({ addBase, theme }) => {
       addBase({
         ".scrollbar": {
@@ -149,7 +140,7 @@ module.exports = {
           width: "6px",
         },
         ".scrollbar::-webkit-scrollbar-thumb": {
-          backgroundColor: theme("colors.white"),
+          backgroundColor: theme("colors.black"),
         },
       });
     }),

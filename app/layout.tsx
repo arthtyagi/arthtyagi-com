@@ -42,7 +42,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        "text-black bg-white",
+        "text-black from-cyan-50 via-rose-50 to-fuchsia-50 bg-gradient-to-br scrollbar antialiased",
         `${switzer.variable} ${kaisei.variable}`
       )}
     >
