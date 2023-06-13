@@ -4,7 +4,7 @@ import { EnvelopeIcon } from "@heroicons/react/24/outline";
 
 export default function UserLinks() {
   return (
-    <div className="flex flex-row justify-center space-x-5">
+    <div className="flex flex-row justify-center mt-10 space-x-5">
       <a href="https://www.instagram.com/jeezarth/" target="_blank">
         <Image
           src="/icons/instagram.svg"
