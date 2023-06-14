@@ -20,10 +20,10 @@ export const metadata = {
     default: "Arth Tyagi",
     template: "%s | Arth Tyagi",
   },
-  description: "Developer, Designer, Hobby Music Producer",
+  description: "Developer, Designer, Producer",
   openGraph: {
     title: "Arth Tyagi",
-    description: "Developer, Designer, Hobby Music Producer",
+    description: "Developer, Designer, Producer",
     url: "https://arthtyagi.com",
     siteName: "Arth Tyagi",
     images: [
