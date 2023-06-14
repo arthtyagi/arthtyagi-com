@@ -23,7 +23,7 @@ export default function Hero() {
           or write ill-produced rhymes to blow off steam.
         </p>
         <p className="text-zinc-500 text-sm xl:text-xl lg:text-lg sm:text-base mt-5 tracking-tight">
-          P.S. I’m still migrating my blogs. And, the music link redirects to my
+          P.S. The music link redirects to my
           <a
             className="text-orange-500 link-underline link-underline-black"
             href="https://soundcloud.com/ogtrillbill"

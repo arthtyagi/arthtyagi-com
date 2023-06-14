@@ -3,15 +3,18 @@
 import { useState } from "react";
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import UserLinks from "./UserLinks";
+import Link from "next/link";
 
 export default function Nav() {
   const [mobileMenu, setMobileMenu] = useState(false);
   return (
-    <div className="flex flex-row flex-1 sm:m-5">
+    <div className="flex flex-row flex-1 sm:m-5 m-10">
       <div className="flex flex-col flex-1">
-        <h1 className="lg:text-5xl sm:text-4xl text-3xl font-sans uppercase font-black">
-          Arth
-        </h1>
+        <Link href="/">
+          <h1 className="lg:text-5xl sm:text-4xl text-3xl font-sans uppercase font-black">
+            Arth
+          </h1>
+        </Link>
       </div>
       <div className="hidden sm:flex flex-col flex-1">
         {/* Navigation */}
@@ -76,7 +79,7 @@ export default function Nav() {
                   Music
                 </a>
               </ul>
-                <UserLinks />
+              <UserLinks />
             </div>
           )}
         </div>
