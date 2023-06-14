@@ -19,7 +19,7 @@ export default function Hero() {
         <br />
         <p className="xl:text-4xl lg:text-3xl text-2xl text-zinc-600 tracking-tight">
           Rn, I’m working on Melodrip, an AI music curator. I produce
-          psychedelic-esque trap music <i className="text-xl">(read: noise)</i>{" "}
+          psychedelic-esque trap music <i className="text-lg">(read: noise)</i>{" "}
           or write ill-produced rhymes to blow off steam.
         </p>
         <p className="text-zinc-500 text-sm xl:text-xl lg:text-lg sm:text-base mt-5 tracking-tight">

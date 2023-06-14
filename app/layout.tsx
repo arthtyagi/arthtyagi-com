@@ -21,6 +21,21 @@ export const metadata = {
     template: "%s | Arth Tyagi",
   },
   description: "Developer, Designer, Hobby Music Producer",
+  openGraph: {
+    title: "Arth Tyagi",
+    description: "Developer, Designer, Hobby Music Producer",
+    url: "https://arthtyagi.com",
+    siteName: "Arth Tyagi",
+    images: [
+      {
+        url: "https://arthtyagi.com/og.png",
+        width: 1230,
+        height: 630,
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
   icons: {
     shortcut: "/favicon.ico",
   },
