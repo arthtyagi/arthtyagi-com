@@ -2,6 +2,8 @@ import { allBlogs } from "contentlayer/generated";
 
 import Link from "next/link";
 import type { Metadata } from "next";
+import { CheckCircleIcon } from "@heroicons/react/24/outline";
+import StyledLists from "@/components/StyledLists";
 
 export const metadata: Metadata = {
   title: "Arth's Blog",
@@ -44,6 +46,7 @@ export default function Blogs() {
               me writing on development, design, music, and random experiences.
             </p>
           </div>
+
         </div>
       </div>
     </section>

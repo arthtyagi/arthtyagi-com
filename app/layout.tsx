@@ -63,7 +63,7 @@ export default function RootLayout({
         `${switzer.variable} ${kaisei.variable}`
       )}
     >
-      <body className="relative overflow-hidden p-10">
+      <body>
         <Nav />
         {children}
         <Footer />

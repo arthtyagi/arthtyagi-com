@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { allBlogs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 import { Mdx } from "@/components/Mdx";
+import Link from "next/link";
 
 interface Params {
   params: {
@@ -70,6 +71,10 @@ export default function BlogPage({ params }: Params) {
         {JSON.stringify(post.structuredData)}
       </script>
       <div className="mx-8 py-8 max-w-8xl mb-10 lg:gap-x-8">
+        <Link className="text-2xl md:max-w-4xl font-serif text-black
+         tracking-tight link-underline link-underline-black" href="/blogs">
+          ← Back
+        </Link>
         <h2 className="lg:mt-16 mt-8 lg:mx-auto md:max-w-4xl lowercase text-6xl font-serif font-bold tracking-tight">
           {post.title}
         </h2>

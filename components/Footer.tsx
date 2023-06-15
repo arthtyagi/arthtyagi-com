@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="flex flex-row justify-center mt-10 space-x-5">
+    <div className="flex flex-row justify-center m-10 space-x-5">
       <Link href="https://www.instagram.com/jeezarth/" target="_blank">
         <Image
           src="/icons/instagram.svg"
