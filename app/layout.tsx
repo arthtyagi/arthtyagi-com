@@ -3,6 +3,7 @@ import clsx from "clsx";
 import localFont from "next/font/local";
 import { Kaisei_Tokumin } from "next/font/google";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 const switzer = localFont({
   src: "../public/fonts/switzer-variable.woff2",
   variable: "--font-switzer",
@@ -65,6 +66,7 @@ export default function RootLayout({
       <body>
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );

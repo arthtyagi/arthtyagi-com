@@ -1,9 +1,26 @@
+const { withContentlayer } = require("next-contentlayer");
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  swcMinify: true,
   images: {
     dangerouslyAllowSVG: true,
     domains: ["imagedelivery.net", "api.producthunt.com", "tailwindui.com"],
+  },
+  remotePatterns: [
+    {
+      protocol: "https",
+      hostname: "www.youtube.com",
+      pathname: "/**",
+    },
+  ],
+  headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: securityHeaders,
+      },
+    ];
   },
 };
 
@@ -56,4 +73,4 @@ const securityHeaders = [
   },
 ];
 
-module.exports = nextConfig;
+module.exports = withContentlayer(nextConfig);

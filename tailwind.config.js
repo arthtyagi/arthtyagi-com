@@ -38,6 +38,7 @@ module.exports = {
         sans: ["var(--font-switzer)", ...defaultTheme.fontFamily.sans],
         serif: ["var(--font-kaisei)"],
       },
+
       keyframes: {
         gradient: {
           "0%, 100%": { color: "#fab296", backgroundPosition: "0% 50%" },
@@ -127,6 +128,7 @@ module.exports = {
     },
   },
   plugins: [
+    require("@tailwindcss/typography"),
     "@tailwindcss/forms",
     "@tailwindcss/aspect-ratio",
     plugin(({ addBase, theme }) => {
