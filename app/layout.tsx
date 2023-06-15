@@ -2,7 +2,7 @@ import "./globals.css";
 import clsx from "clsx";
 import localFont from "next/font/local";
 import { Kaisei_Tokumin } from "next/font/google";
-import Nav from "./components/Nav";
+import Nav from "@/components/Nav";
 const switzer = localFont({
   src: "../public/fonts/switzer-variable.woff2",
   variable: "--font-switzer",

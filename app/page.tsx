@@ -1,6 +1,6 @@
-import Nav from "./components/Nav";
-import UserLinks from "./components/UserLinks";
-import Hero from "./components/Hero";
+import Nav from "@/components/Nav";
+import UserLinks from "@/components/UserLinks";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
