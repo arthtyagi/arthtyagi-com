@@ -67,6 +67,7 @@ export default function Nav() {
                   className=" text-5xl font-sans font-black
         duration-300 link-underline link-underline-black"
                   href="/blogs"
+                  onClick={() => setMobileMenu(!mobileMenu)}
                 >
                   Blogs
                 </Link>
@@ -75,6 +76,7 @@ export default function Nav() {
               link-underline duration-300 sm:text-white sm:bg-black"
                   href="https://soundcloud.com/ogtrillbill"
                   target="_blank"
+                  onClick={() => setMobileMenu(!mobileMenu)}
                 >
                   Music
                 </Link>
