@@ -36,7 +36,7 @@ export default async function handler(req: NextRequest) {
             fontFamily: 'Switzer',
             letterSpacing: '-0.05em',
             fontStyle: 'normal',
-            color: 'white',
+            color: 'black',
             lineHeight: '120px',
             whiteSpace: 'pre-wrap',
           }}
@@ -46,8 +46,8 @@ export default async function handler(req: NextRequest) {
       </div>
     ),
     {
-      width: 1230,
-      height: 630,
+      width: 1920,
+      height: 1080,
       fonts: [
         {
           name: 'Switzer',
