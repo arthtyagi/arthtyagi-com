@@ -20,21 +20,21 @@ export default function Nav() {
         {/* Navigation */}
         <nav className="flex flex-row justify-end">
           <ul className="flex flex-row space-x-5">
-            <a
+            <Link
               className="lg:text-5xl text-3xl font-sans font-black
         duration-300 link-underline link-underline-black"
               href="/blogs"
             >
               Blogs
-            </a>
-            <a
+            </Link>
+            <Link
               className="lg:text-5xl text-3xl  font-sans sm:uppercase font-black
               link-underline duration-300 sm:text-white sm:bg-black"
               href="https://soundcloud.com/ogtrillbill"
               target="_blank"
             >
               Music
-            </a>
+            </Link>
           </ul>
         </nav>
       </div>
@@ -63,21 +63,21 @@ export default function Nav() {
                 <XMarkIcon className="h-10 w-10" />
               </button>
               <ul className="flex flex-col space-y-10 pb-12 uppercase">
-                <a
+                <Link
                   className=" text-5xl font-sans font-black
         duration-300 link-underline link-underline-black"
                   href="/blogs"
                 >
                   Blogs
-                </a>
-                <a
+                </Link>
+                <Link
                   className="text-5xl font-sans sm:uppercase font-black
               link-underline duration-300 sm:text-white sm:bg-black"
                   href="https://soundcloud.com/ogtrillbill"
                   target="_blank"
                 >
                   Music
-                </a>
+                </Link>
               </ul>
               <UserLinks />
             </div>
