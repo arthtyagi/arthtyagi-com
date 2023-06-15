@@ -1,3 +1,4 @@
+
 export default function Blogs() {
   return (
     <div className="mx-8 py-8 max-w-8xl mb-10 lg:gap-x-8">
