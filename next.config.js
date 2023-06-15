@@ -7,13 +7,6 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     domains: ["imagedelivery.net", "api.producthunt.com", "tailwindui.com"],
   },
-  remotePatterns: [
-    {
-      protocol: "https",
-      hostname: "www.youtube.com",
-      pathname: "/**",
-    },
-  ],
   headers() {
     return [
       {
@@ -30,7 +23,6 @@ const ContentSecurityPolicy = `
     script-src 'self' 'unsafe-eval' 'unsafe-inline' cdn.vercel-insights.com vercel.live;
     style-src 'self' 'unsafe-inline';
     img-src * blob: data:;
-    media-src 'none';
     connect-src *;
     font-src 'self';
 `;
