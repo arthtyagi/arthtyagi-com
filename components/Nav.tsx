@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import UserLinks from "./UserLinks";
+import Footer from "./Footer";
 import Link from "next/link";
 
 export default function Nav() {
@@ -79,7 +79,7 @@ export default function Nav() {
                   Music
                 </Link>
               </ul>
-              <UserLinks />
+              <Footer />
             </div>
           )}
         </div>
