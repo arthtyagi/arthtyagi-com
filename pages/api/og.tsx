@@ -6,7 +6,7 @@ export const config = {
 };
 
 const font = fetch(
-  new URL('../../public/fonts/switzer-variable.woff2', import.meta.url)
+  new URL('../../public/fonts/switzer-bold.ttf', import.meta.url)
 ).then((res) => res.arrayBuffer());
 
 export default async function handler(req: NextRequest) {
