@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
     <div className="mx-auto lg:mx-0 max-w-8xl mb-10 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-40">
       <div className="mx-auto mt-16 md:max-w-2xl lg:mt-0 ">
-        <h1 className="text-6xl xl:text-8xl lg:text-7xl font-serif font-bold tracking-tight">
+        <h1 className="text-6xl xl:text-8xl lg:text-7xl font-bold tracking-tight">
           <Image src="/arth.png" alt="Arth Tyagi" width={200} height={200} />
           Developer, Designer, Producer
         </h1>
@@ -16,10 +17,20 @@ export default function Hero() {
         </p>
 
         <br />
-        <p className="xl:text-4xl lg:text-3xl text-2xl text-zinc-600 tracking-tight">
-          Rn, I’m working on Melodrip, an AI music curator. I produce
-          psychedelic-esque trap music <i className="text-lg">(read: noise)</i>{" "}
-          or write ill-produced rhymes to blow off steam.
+        <p className="xl:text-3xl lg:text-2xl text-xl text-zinc-600 tracking-tight">
+          Currently, I’m working on{" "}
+          <Link
+            href="https://getrentzy.com"
+            className="text-orange-500 link-underline link-underline-black"
+            target="_blank"
+          >
+            RentZy
+          </Link>
+          , an AI-powered house-hunting platform.
+        </p>
+        <br />
+        <p className="xl:text-3xl lg:text-2xl text-xl text-zinc-500 tracking-tight">
+          I produce psychedelic trap music{" "} or write ill-produced rhymes to blow off steam.
         </p>
         <p className="text-zinc-500 text-sm xl:text-xl lg:text-lg sm:text-base mt-5 tracking-tight">
           P.S. The music link redirects to my
@@ -30,8 +41,8 @@ export default function Hero() {
             {" "}
             SoundCloud
           </a>{" "}
-          for now. Soon, there will be a dedicated site/store. Yes, I
-          drew that goofy illustration just to make an <i>art NFT</i>.
+          for now. And, yes, I drew that
+          goofy illustration just to make an <i>art NFT</i>.
         </p>
       </div>
     </div>
