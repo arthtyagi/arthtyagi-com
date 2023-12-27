@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import { Kaisei_Tokumin } from "next/font/google";
 import Nav from "@/components/Nav";
 import { cookies } from "next/headers";
+import Footer from "@/components/Footer";
 // import Footer from "@/components/Footer";
 const switzer = localFont({
   src: "../public/fonts/switzer-variable.woff2",
@@ -69,6 +70,7 @@ export default function RootLayout({
       <body className="text-black font-sans dark:text-white from-cyan-50 via-rose-50 to-fuchsia-50  bg-gradient-to-br dark:from-black dark:via-black dark:to-zinc-950">
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );
