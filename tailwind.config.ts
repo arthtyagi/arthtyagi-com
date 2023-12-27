@@ -107,7 +107,7 @@ module.exports = {
           width: "6px",
         },
         ".scrollbarDark::-webkit-scrollbar-thumb": {
-          backgroundColor: theme("colors.white"),
+          backgroundColor: theme("colors.black"),
         },
       });
     }),

@@ -1,8 +1,8 @@
 import "./globals.css";
 import clsx from "clsx";
 import localFont from "next/font/local";
-import { Kaisei_Tokumin } from "next/font/google";
-import Nav from "@/components/Nav";
+import { Kaisei_Tokumin, Space_Grotesk } from "next/font/google";
+import Nav from "@/components/home/Nav";
 import { cookies } from "next/headers";
 import Footer from "@/components/Footer";
 // import Footer from "@/components/Footer";
@@ -18,6 +18,15 @@ const kaisei = Kaisei_Tokumin({
   subsets: ["latin"],
   display: "swap",
 });
+
+
+const space = Space_Grotesk({
+  weight: ["400", "700"],
+  variable: "--font-space-grotesk",
+  subsets: ["latin"],
+  display: "swap",
+});
+
 
 export const metadata = {
   title: {
@@ -62,15 +71,13 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        "antialiased scrollbar scroll-smooth",
-        theme?.value === "dark" ? "dark" : "",
-        `${switzer.variable} ${kaisei.variable}`
+        "antialiased scrollbarDark scroll-smooth",
+        `${switzer.variable} ${kaisei.variable} ${space.variable}`
       )}
     >
-      <body className="text-black font-sans dark:text-white from-orange-100 via-cyan-50 to-rose-100  bg-gradient-to-b dark:from-black dark:via-black dark:to-zinc-950">
-        <Nav />
+      <body className="text-black font-sans bg-black ">
+
         {children}
-        <Footer />
       </body>
     </html>
   );
