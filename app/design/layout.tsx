@@ -1,13 +1,12 @@
-import "./globals.css";
+import "../globals.css";
 import clsx from "clsx";
 import localFont from "next/font/local";
 import { Kaisei_Tokumin } from "next/font/google";
-import Nav from "@/components/Nav";
 import { cookies } from "next/headers";
 import Footer from "@/components/Footer";
 // import Footer from "@/components/Footer";
 const switzer = localFont({
-  src: "../public/fonts/switzer-variable.woff2",
+  src: "../../public/fonts/switzer-variable.woff2",
   variable: "--font-switzer",
   display: "swap",
 });
@@ -68,7 +67,7 @@ export default function RootLayout({
       )}
     >
       <body className="text-black font-sans dark:text-white from-orange-100 via-cyan-50 to-rose-100  bg-gradient-to-b dark:from-black dark:via-black dark:to-zinc-950">
-        <Nav />
+
         {children}
         <Footer />
       </body>
