@@ -66,6 +66,13 @@ module.exports = {
         triumph: ["var(--font-triumph)", ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
+        colorChange: {
+          "0%": { color: "#ff0000" } /* Red */,
+          "25%": { color: "#00ff00" } /* Green */,
+          "50%": { color: "#0000ff" } /* Blue */,
+          "75%": { color: "#ffff00" } /* Yellow */,
+          "100%": { color: "#ff0000" } /* Red again */,
+        },
         "accordion-down": {
           from: { height: 0 },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -76,6 +83,7 @@ module.exports = {
         },
       },
       animation: {
+        "color-change": "colorChange 5s infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
