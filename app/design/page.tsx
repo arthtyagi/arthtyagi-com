@@ -1,9 +1,7 @@
 import Hero from "@/components/design/Hero";
 import Nav from "@/components/design/Nav";
 import { CreditCardIcon } from "@heroicons/react/24/solid";
-import Image from "next/image";
 import Link from "next/link";
-import { Card } from "@/components/ui/card";
 
 const AnimatedGradientBlob = () => {
   return (
@@ -16,7 +14,9 @@ export { AnimatedGradientBlob };
 const ExpressCheckout = () => {
   return (
     <div
-      className="border-[1px] border-zinc-800 flex  space-x-8 flex-row justify-between items-center p-6 text-white bg-gradient-to-br from-blue-900/30 via-orange-900/20 to-black rounded-lg max-md:max-w-full max-md:mt-10 max-md:px-5 w-md:full"
+      className="border-[1px] border-zinc-800 flex space-x-8 flex-row justify-between
+      items-center p-6 text-white bg-gradient-to-br from-blue-900/30 via-orange-900/20 to-black
+      rounded-lg md:max-w-full md:mt-0 mt-10 md:px-5 md:full"
       data-v0-t="card"
     >
       <div className="text-left">
@@ -24,10 +24,12 @@ const ExpressCheckout = () => {
         <p className="text-md md:text-lg text-zinc-400">Get your passes.</p>
       </div>
       <Link
-        className="flex items-center bg-white text-black p-2 rounded-md space-x-2"
+        className="flex font-grotesk font-semibold uppercase tracking-widest items-center bg-white text-black p-2 rounded-md space-x-2"
         href="/buy"
       >
-        <span className="text-md tracking-wider font-semibold font-grotesk uppercase md:text-lg">Buy</span>
+        <span className="text-md md:text-lg">
+          Buy
+        </span>
         <CreditCardIcon className="md:h-6 md:w-6 h-4 w-4" />
       </Link>
     </div>
@@ -44,17 +46,17 @@ export default function Design() {
         <ExpressCheckout />
       </div>
 
-      <div className="text-white text-2xl self-center mt-20 max-md:max-w-full max-md:mt-10">
+      <div className="font-triumph text-white md:text-2xl self-center md:max-w-full mt-10">
         a harmonic junction in A VOID
       </div>
       <div
-        className="text-stone-400 text-2xl self-center max-md:max-w-full -mt-3"
+        className="font-triumph text-stone-500 md:text-2xl self-center md:max-w-full md:-mt-6 -mt-5"
         style={{ transform: "rotateX(180deg)" }}
       >
         a harmonic junction in A VOID
       </div>
 
-      <div className="text-stone-400 text-2xl self-center whitespace-nowrap mt-14 max-md:mt-10">
+      <div className="text-stone-400 font-triumph text-2xl self-center whitespace-nowrap mt-14 max-md:mt-10">
         STARRING TRILL BILL
       </div>
       <div

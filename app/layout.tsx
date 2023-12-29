@@ -12,6 +12,13 @@ const switzer = localFont({
   display: "swap",
 });
 
+const triumph = localFont({
+  src: "../public/fonts/satriumph.woff2",
+  variable: "--font-triumph",
+  display: "swap",
+});
+
+
 const kaisei = Kaisei_Tokumin({
   weight: ["400", "700", "800"],
   variable: "--font-kaisei",
@@ -72,7 +79,7 @@ export default function RootLayout({
       lang="en"
       className={clsx(
         "antialiased scrollbarDark scroll-smooth",
-        `${switzer.variable} ${kaisei.variable} ${space.variable}`
+        `${switzer.variable} ${kaisei.variable} ${space.variable} ${triumph.variable}`,
       )}
     >
       <body className="text-black font-sans bg-black ">

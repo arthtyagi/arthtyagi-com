@@ -63,6 +63,7 @@ module.exports = {
         sans: ["var(--font-switzer)", ...defaultTheme.fontFamily.sans],
         serif: ["var(--font-kaisei)"],
         grotesk: ["var(--font-space-grotesk)", ...defaultTheme.fontFamily.mono],
+        triumph: ["var(--font-triumph)", ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
         "accordion-down": {

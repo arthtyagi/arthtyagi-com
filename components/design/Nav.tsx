@@ -16,7 +16,7 @@ const userNavigation = [
 
 export default function Nav() {
   return (
-    <header className="inset-x-0 top-0 z-50 fixed bg-black/50 md:bg-transparent backdrop-blur-md rounded-sm">
+    <header className="font-triumph inset-x-0 top-0 z-50 fixed bg-black/50 md:bg-transparent backdrop-blur-md rounded-sm">
       <nav
         className="flex items-center justify-between p-4 lg:px-8"
         aria-label="Global"
@@ -25,18 +25,18 @@ export default function Nav() {
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Pulp.sh</span>
 
-            <p className="text-2xl font-bold uppercase font-grotesk text-white">
+            <p className="text-2xl font-bold uppercase text-white">
               Rendezvous
             </p>
           </Link>
         </div>
 
-        <div className="hidden md:flex md:gap-x-8 lg:gap-x-12 xl:gap-x-20 bg-black p-2 px-6 border-[1px] border-zinc-800 rounded-full">
+        <div className="hidden font-grotesk md:flex md:gap-x-8 lg:gap-x-12 xl:gap-x-20 bg-black p-2 px-6 border-[1px] border-zinc-800 rounded-full">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="text-md leading-6 text-white duration-300 hover:text-zinc-400"
+              className="uppercase text-md leading-6 text-white duration-300 hover:text-zinc-400"
             >
               {item.name}
             </Link>
@@ -46,11 +46,12 @@ export default function Nav() {
         <div className="hidden md:flex md:flex-1 md:justify-end">
           <Link
             href="/login"
-            className="flex text-md rounded-lg font-semibold  leading-6 bg-white p-2 border-[1px] border-zinc-800  px-4 text-zinc-900 hover:bg-zinc-950 hover:text-zinc-100 duration-300"
+            className="flex text-md rounded-lg font-semibold leading-6 bg-white
+             p-2 border-[1px] border-zinc-800 py-2 px-4 text-zinc-900 hover:bg-zinc-950 hover:text-zinc-100 duration-300"
           >
-            RSVP
+           <span className="mt-1"> RSVP</span>
             <span aria-hidden="true">
-              <ArrowUpRightIcon className="ml-1 h-6 w-4 stroke-2" />
+              <ArrowUpRightIcon className=" ml-1 h-6 w-4 stroke-2" />
             </span>
           </Link>
         </div>
