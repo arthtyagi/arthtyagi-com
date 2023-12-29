@@ -7,9 +7,9 @@ import Image from "next/image";
 const ExpressCheckout = () => {
   return (
     <div
-      className="border-[1px] border-zinc-800 flex space-x-8 flex-row justify-between
-      items-center p-6 text-white bg-gradient-to-br from-blue-900/30 via-orange-900/20 to-black backdrop-blur-2xl
-      rounded-lg md:max-w-full md:mt-0 mt-10 md:px-5 md:full"
+      className="border-[1px] hover:bg-purple-900/20 duration-500 border-zinc-800 flex space-x-12 flex-row justify-between
+      items-center p-6 text-white bg-black/30 backdrop-blur-2xl
+      rounded-2xl md:max-w-full md:mt-0 mt-10 md:px-10"
       data-v0-t="card"
     >
       <div className="text-left">
@@ -17,7 +17,9 @@ const ExpressCheckout = () => {
         <p className="text-md md:text-lg text-zinc-400">Get your passes.</p>
       </div>
       <Link
-        className="flex font-grotesk font-semibold uppercase tracking-widest items-center bg-white text-black p-2 rounded-md space-x-2"
+        className="flex font-grotesk font-semibold uppercase tracking-widest items-center bg-white hover:bg-black/50 hover:backdrop-blur-xl
+         hover:text-white duration-300 border-zinc-800 border-[1px]
+         text-black p-2 px-4 rounded-md space-x-2"
         href="/buy"
       >
         <span className="text-md md:text-lg">Buy</span>
@@ -59,6 +61,11 @@ export default function Design() {
       <div
         className="blob fixed -bottom-20 -right-20 -z-10 h-96 w-96 rounded-full bg-gradient-to-b from-purple-500/40 dark:from-purple-500/30 via-blue-900/20 to-sky-800/20 mix-blend-difference
                   blur-2xl filter sm:-right-24 lg:h-[48rem] lg:w-[48rem]"
+      />
+
+      <div
+        className="blob fixed top-1/2 left-1/6 -z-10 h-96 w-96 rounded-full bg-gradient-to-br from-orange-900/40 dark:from-sky-500/30 via-blue-900/20 to-amber-800/40 mix-blend-difference
+                  blur-2xl filter  lg:h-[48rem] lg:w-[48rem]"
       />
 
       <div className="-z-10 fixed sm:-bottom-10 sm:-left-10 -bottom-5 -left-5">
