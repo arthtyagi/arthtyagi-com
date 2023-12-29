@@ -8,7 +8,7 @@ const ExpressCheckout = () => {
   return (
     <div
       className="border-[1px] border-zinc-800 flex space-x-8 flex-row justify-between
-      items-center p-6 text-white bg-gradient-to-br from-blue-900/30 via-orange-900/20 to-black
+      items-center p-6 text-white bg-gradient-to-br from-blue-900/30 via-orange-900/20 to-black backdrop-blur-2xl
       rounded-lg md:max-w-full md:mt-0 mt-10 md:px-5 md:full"
       data-v0-t="card"
     >
@@ -47,7 +47,7 @@ export default function Design() {
         a harmonic junction in A VOID
       </div>
 
-      <div className="z-50 text-stone-400 font-triumph text-2xl self-center whitespace-nowrap mt-14 max-md:mt-10">
+      <div className="z-50 font-triumph text-zinc-200 text-sm self-center whitespace-nowrap mt-14 max-md:mt-10">
         STARRING TRILL BILL
       </div>
 
