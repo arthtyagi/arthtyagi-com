@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+    <div className="font-triumph gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
     <div className="flex flex-col items-stretch w-[30%] max-md:w-full max-md:ml-0">
       <div className="flex grow flex-col items-stretch max-md:mt-10">
         <div

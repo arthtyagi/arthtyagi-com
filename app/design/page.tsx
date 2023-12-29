@@ -70,7 +70,7 @@ export default function Design() {
           objectFit="cover"
           className=" hover:filter hover:grayscale duration-500 "
           layout="responsive"
-          sizes="(max-width: 1080px) 80vw, 50vw"
+          sizes="(max-width: 1080px) 50vw, 30vw"
         />
       </div>
 
