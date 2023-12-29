@@ -52,12 +52,12 @@ export default function Design() {
       </div>
 
       <div
-        className="blob absolute -top-20 -left-20 -z-10 h-96 w-96 rounded-full bg-gradient-to-b from-orange-500/40 to-sky-900/20 mix-blend-difference
+        className="blob fixed -top-20 -left-20 -z-10 h-96 w-96 rounded-full bg-gradient-to-b from-orange-500/40 to-sky-900/20 mix-blend-difference
                   blur-2xl filter sm:right-0 lg:h-[24rem] lg:w-[48rem]"
       />
 
       <div
-        className="blob absolute -bottom-20 -right-20 -z-10 h-96 w-96 rounded-full bg-gradient-to-b from-purple-500/40 dark:from-purple-500/30 via-blue-900/20 to-sky-800/20 mix-blend-difference
+        className="blob fixed -bottom-20 -right-20 -z-10 h-96 w-96 rounded-full bg-gradient-to-b from-purple-500/40 dark:from-purple-500/30 via-blue-900/20 to-sky-800/20 mix-blend-difference
                   blur-2xl filter sm:-right-24 lg:h-[48rem] lg:w-[48rem]"
       />
 
