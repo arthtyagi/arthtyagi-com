@@ -4,14 +4,6 @@ import { CreditCardIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import Image from "next/image";
 
-const AnimatedGradientBlob = () => {
-  return (
-    <div className="w-64 h-64 rounded-full bg-gradient-to-r animate-pulse from-pink-500 via-red-500 to-yellow-500"></div>
-  );
-};
-
-export { AnimatedGradientBlob };
-
 const ExpressCheckout = () => {
   return (
     <div
