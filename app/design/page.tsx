@@ -17,12 +17,12 @@ const ExpressCheckout = () => {
         <p className="text-md md:text-lg text-zinc-400">Get your passes.</p>
       </div>
       <Link
-        className="flex font-grotesk font-semibold uppercase tracking-widest items-center bg-white hover:bg-black/50 hover:backdrop-blur-xl
+        className="flex font-triumph uppercase items-center bg-white hover:bg-black/50 hover:backdrop-blur-xl
          hover:text-white duration-300 border-zinc-800 border-[1px]
          text-black p-2 px-4 rounded-md space-x-2"
         href="/buy"
       >
-        <span className="text-md md:text-lg">Buy</span>
+        <span className="text-md mt-[0.36rem] md:text-lg">Buy</span>
         <CreditCardIcon className="md:h-6 md:w-6 h-4 w-4" />
       </Link>
     </div>

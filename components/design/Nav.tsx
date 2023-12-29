@@ -46,12 +46,12 @@ export default function Nav() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
             href="/login"
-            className="flex text-md rounded-lg font-semibold leading-6 bg-white
+            className="flex text-md rounded-lg leading-6 bg-white
              p-2 border-[1px] border-zinc-800 py-2 px-4 text-zinc-900 hover:bg-zinc-950 hover:text-zinc-100 duration-300"
           >
-           <span className="mt-1"> RSVP</span>
+           <span className="mt-[0.35rem]"> RSVP</span>
             <span aria-hidden="true">
-              <ArrowUpRightIcon className=" ml-1 h-6 w-4 stroke-2" />
+              <ArrowUpRightIcon className="mt-[0.15rem] ml-1 h-6 w-4 stroke-2" />
             </span>
           </Link>
         </div>
